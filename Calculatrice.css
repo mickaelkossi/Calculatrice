@@ -1,0 +1,128 @@
+html {
+    background-color: #9275E7;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titre {
+    text-align: center;
+    color: white;
+    font-size: 30px;
+}
+
+.calculatrice{
+    border: 1px solid black;
+    border-radius: 40px;
+    height: 570px;
+    width: 30%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 30px;
+}
+
+.ecran{
+    border: 1px solid white;
+    height: 100px;
+    width: 70%;
+    background-color: white;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.touches{
+    height: 50%;
+    padding-top: 50px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr ;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 30px;
+    grid-row-gap: 20px; 
+}
+
+button:active {
+    box-shadow: 0 1px #a8a8a8;
+    transform: translateY(2px);
+}
+
+button{
+    background-color: #9275E7
+}
+
+.chiffre{
+    border: 1px solid black;
+    border-radius: 100px;
+    width: 50px;
+    height: 60px;
+    font-size: 30px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.chiffre_0{
+    border: 1px solid black;
+    border-radius: 100px;
+    width: 50px;
+    height: 60px;
+    font-size: 30px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;        
+    grid-column-start: 1;
+    grid-column-end: 3;
+    width: 140px;
+    cursor: pointer;
+}
+
+.chiffre_egal{
+    border: 1px solid black;
+    border-radius: 100px;
+    width: 50px;
+    height: 60px;
+    font-size: 30px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    width: 225px;
+    cursor: pointer;
+    
+}
+
+@media (max-width: 1420px){
+    .calculatrice{
+        border: 1px solid black;
+        border-radius: 40px;
+        height: 580px;
+        width: 80%;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding-top: 30px;
+    }
+
+    .boutons{
+        height: 50%;
+        padding-top: 50px;
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr ;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-column-gap: 10px;
+        grid-row-gap: 20px;
+        padding-left: 13px;
+    }
+}
